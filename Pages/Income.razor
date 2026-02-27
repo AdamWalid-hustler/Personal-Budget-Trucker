@@ -1,0 +1,61 @@
+
+@page "/income"
+@using BudgetTracker.Models
+@using BudgetTracker.Services
+
+@inject IPersonal PersonalService
+
+<h2>Add Income</h2>
+<EditForm Model="incomeModel" OnValidSubmit="AddIncome">
+	<DataAnnotationsValidator />
+	<ValidationSummary />
+	<div class="mb-2">
+		<label>Amount:</label>
+		<InputNumber @bind-Value="incomeModel.Amount" class="form-control" />
+	</div>
+	<div class="mb-2">
+		<label>Date:</label>
+		<InputDate @bind-Value="incomeModel.Date" class="form-control" />
+	</div>
+	<div class="mb-2">
+		<label>Description:</label>
+		<InputText @bind-Value="incomeModel.Description" class="form-control" />
+	</div>
+	<div class="mb-2">
+		<label>Initial Balance:</label>
+		<InputNumber @bind-Value="incomeModel.Balance" class="form-control" />
+	</div>
+	<button type="submit" class="btn btn-primary">Add Income</button>
+</EditForm>
+
+<h3 class="mt-4">Recent Incomes</h3>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Amount</th>
+			<th>Date</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var income in PersonalService.GetRecentIncomes(10))
+		{
+			<tr>
+				<td>@income.Amount</td>
+				<td>@income.Date.ToShortDateString()</td>
+				<td>@income.Description</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@code {
+	private BudgetTracker.Models.Income incomeModel = new BudgetTracker.Models.Income();
+
+	private void AddIncome()
+	{
+		PersonalService.AddIncome(incomeModel.Amount, incomeModel.Date, incomeModel.Description ?? string.Empty, incomeModel.Balance);
+		incomeModel = new BudgetTracker.Models.Income();
+		StateHasChanged();
+	}
+}

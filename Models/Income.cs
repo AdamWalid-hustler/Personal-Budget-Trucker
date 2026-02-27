@@ -9,6 +9,8 @@ namespace BudgetTracker.Models
         public string? Description { get; set; }
         public decimal Balance { get; set; }
 
+        public Income() { }
+
         public Income(decimal amount, DateTime date, string description, decimal initialBalance = 0)
         {
             Amount = amount;

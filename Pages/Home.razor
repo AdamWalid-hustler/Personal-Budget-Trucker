@@ -1,6 +1,58 @@
+
 @page "/"
 @using BudgetTracker.Models
 @using BudgetTracker.Services
 
-@inject IPersonal PersonlService
+@inject IPersonal PersonalService
+
+<h1>Budget Summary</h1>
+<div class="mb-4">
+	<p><b>Total Income:</b> @PersonalService.GetTotalIncome()</p>
+	<p><b>Total Expenses:</b> @PersonalService.GetTotalExpenses()</p>
+	<p><b>Current Balance:</b> @PersonalService.GetCurrentBalance()</p>
+</div>
+
+<h3>Recent Incomes</h3>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Amount</th>
+			<th>Date</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var income in PersonalService.GetRecentIncomes(5))
+		{
+			<tr>
+				<td>@income.Amount</td>
+				<td>@income.Date.ToShortDateString()</td>
+				<td>@income.Description</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<h3>Recent Expenses</h3>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Amount</th>
+			<th>Date</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var exp in PersonalService.GetRecentExpenses(5))
+		{
+			<tr>
+				<td>@exp.Name</td>
+				<td>@exp.Amount</td>
+				<td>@exp.Date.ToShortDateString()</td>
+				<td>@exp.Description</td>
+			</tr>
+		}
+	</tbody>
+</table>
 

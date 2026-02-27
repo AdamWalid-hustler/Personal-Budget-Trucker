@@ -9,7 +9,7 @@ namespace BudgetTracker.Services
     {
         private readonly List<Income> _incomes = new List<Income>();
         private readonly List<Expense> _expenses = new List<Expense>();
-         private decimal balance = 0;
+        private decimal balance = 0;
 
         public void AddIncome(decimal amount, DateTime date, string description, decimal initialBalance)
         {
