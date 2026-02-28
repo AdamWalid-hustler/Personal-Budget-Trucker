@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EibxvfgSb1g=",
+  "dgSpecHash": "/C885q3HP+w=",
   "success": true,
   "projectFilePath": "C:\\Users\\Walid\\BudgetTracker\\BudgetTracker.csproj",
   "expectedPackageFiles": [
@@ -28,10 +28,10 @@
     "C:\\Users\\Walid\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Walid\\.nuget\\packages\\microsoft.jsinterop\\8.0.19\\microsoft.jsinterop.8.0.19.nupkg.sha512",
     "C:\\Users\\Walid\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.19\\microsoft.jsinterop.webassembly.8.0.19.nupkg.sha512",
-    "C:\\Users\\Walid\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.19\\microsoft.net.illink.tasks.8.0.19.nupkg.sha512",
-    "C:\\Users\\Walid\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.19\\microsoft.net.sdk.webassembly.pack.8.0.19.nupkg.sha512",
+    "C:\\Users\\Walid\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.24\\microsoft.net.illink.tasks.8.0.24.nupkg.sha512",
+    "C:\\Users\\Walid\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.3\\microsoft.net.sdk.webassembly.pack.10.0.3.nupkg.sha512",
     "C:\\Users\\Walid\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
-    "C:\\Users\\Walid\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.19\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.19.nupkg.sha512"
+    "C:\\Users\\Walid\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.24\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.24.nupkg.sha512"
   ],
   "logs": []
 }

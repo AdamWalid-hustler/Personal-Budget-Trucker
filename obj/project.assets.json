@@ -421,13 +421,13 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.19": {
+      "Microsoft.NET.ILLink.Tasks/8.0.24": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.19": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/10.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -871,13 +871,13 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.19": {
+      "Microsoft.NET.ILLink.Tasks/8.0.24": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.19": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/10.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -1713,10 +1713,10 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.19": {
-      "sha512": "IhHf+zeZiaE5EXRyxILd4qM+Hj9cxV3sa8MpzZgeEhpvaG3a1VEGF6UCaPFLO44Kua3JkLKluE0SWVamS50PlA==",
+    "Microsoft.NET.ILLink.Tasks/8.0.24": {
+      "sha512": "1gnadp//+DoGJvV4AFdzPqYPxkypaWYjYMCr7KAacV0iadsHz1nU+rrkoxBCna4FCmeKH49CisEwa7g94/MbEg==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.19",
+      "path": "microsoft.net.illink.tasks/8.0.24",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1730,7 +1730,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.19.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.24.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -1764,20 +1764,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.19": {
-      "sha512": "Cm/sq4ET7XGU7jBSfSh+s+eV0faJ1RnErpImRYN7+d5loWISBwl22qsM6sn9StUWKJao+xGvF0IxgyPVnY20Vw==",
+    "Microsoft.NET.Sdk.WebAssembly.Pack/10.0.3": {
+      "sha512": "Wv9ugg75HxuYeBxJSoK2UPN6lpqsASkyZwd90bdRyVKOtaXZFaKg7R+dYqbZSHJXAIxC1HOcYR0imuIcKpI1yw==",
       "type": "package",
-      "path": "microsoft.net.sdk.webassembly.pack/8.0.19",
+      "path": "microsoft.net.sdk.webassembly.pack/10.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "WasmAppHost/BrowserDebugHost.deps.json",
         "WasmAppHost/BrowserDebugHost.dll",
         "WasmAppHost/BrowserDebugHost.runtimeconfig.json",
+        "WasmAppHost/BrowserDebugHost.staticwebassets.endpoints.json",
         "WasmAppHost/BrowserDebugProxy.dll",
         "WasmAppHost/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
         "WasmAppHost/Microsoft.CodeAnalysis.CSharp.dll",
@@ -1790,17 +1790,19 @@
         "WasmAppHost/WasmAppHost.deps.json",
         "WasmAppHost/WasmAppHost.dll",
         "WasmAppHost/WasmAppHost.runtimeconfig.json",
+        "WasmAppHost/WasmAppHost.staticwebassets.endpoints.json",
         "build/Microsoft.NET.Sdk.WebAssembly.Browser.props",
         "build/Microsoft.NET.Sdk.WebAssembly.Browser.targets",
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.props",
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets",
         "build/Wasm.web.config",
-        "microsoft.net.sdk.webassembly.pack.8.0.19.nupkg.sha512",
+        "build/browser.runtimeconfig.template.json",
+        "microsoft.net.sdk.webassembly.pack.10.0.3.nupkg.sha512",
         "microsoft.net.sdk.webassembly.pack.nuspec",
+        "tools/net10.0/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
+        "tools/net10.0/Microsoft.NET.WebAssembly.Webcil.dll",
         "tools/net472/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
-        "tools/net472/Microsoft.NET.WebAssembly.Webcil.dll",
-        "tools/net8.0/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
-        "tools/net8.0/Microsoft.NET.WebAssembly.Webcil.dll"
+        "tools/net472/Microsoft.NET.WebAssembly.Webcil.dll"
       ]
     },
     "System.IO.Pipelines/8.0.0": {
@@ -1837,12 +1839,13 @@
     "net8.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.19",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.19",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.19",
-      "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.19"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.24",
+      "Microsoft.NET.Sdk.WebAssembly.Pack >= 10.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Walid\\.nuget\\packages\\": {}
+    "C:\\Users\\Walid\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1853,13 +1856,19 @@
       "packagesPath": "C:\\Users\\Walid\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Walid\\BudgetTracker\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Walid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Walid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1877,7 +1886,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1895,13 +1905,13 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.19, )",
+            "version": "[8.0.24, )",
             "autoReferenced": true
           },
           "Microsoft.NET.Sdk.WebAssembly.Pack": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.19, )",
+            "version": "[10.0.3, )",
             "autoReferenced": true
           }
         },
@@ -1919,7 +1929,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[8.0.19, 8.0.19]"
+            "version": "[8.0.24, 8.0.24]"
           }
         ],
         "frameworkReferences": {
@@ -1927,7 +1937,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
