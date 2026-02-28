@@ -20,8 +20,8 @@ namespace BudgetTracker.Services
 
         public void AddExpence(string name, decimal amount, DateTime date, string description, decimal initialBalance)
         {
-            if (amount >= 0)
-                throw new ArgumentOutOfRangeException("Amount cannot be zero", nameof(amount));
+            if (amount <= 0)
+                throw new ArgumentOutOfRangeException("Amount must be positive", nameof(amount));
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(description))
                 throw new ArgumentNullException("Name or description cannot be empty.");
 
